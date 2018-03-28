@@ -1,0 +1,14 @@
+Source: xlnk-kernel-module
+Section: kmod
+Priority: optional
+Maintainer: ikwzm <ichiro_k@ca2.so-net.ne.jp>
+Build-Depends: debhelper (>= 9), bzip2
+Standards-Version: 3.9.6
+Homepage: <https://github.com/ikwzm/xlnk-kernel-module>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/fpga-soc-linux-drivers.git
+#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/fpga-soc-linux-drivers.git;a=summary
+
+Package: xlnk-kernel-module-4.14.21-armv7-fpga
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-image-4.14.21-armv7-fpga
+Description: xlnk(Xilinx APF Accelerator driver) kernel module for FPGA-SoC-Linux.
