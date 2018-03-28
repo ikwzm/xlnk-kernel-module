@@ -18,3 +18,6 @@ clean:
 install: all
 	install -d $(lib_dir)
 	for ko in $(kmod_objects); do install -m 0644 $$ko $(lib_dir) ; done
+	install -d $(prefix)/etc/systemd/system
+	install -m 0644 systemd/xilinx-apf-driver.service $(prefix)/etc/systemd/system/
+

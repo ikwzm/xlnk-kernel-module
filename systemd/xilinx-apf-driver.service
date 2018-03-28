@@ -1,0 +1,20 @@
+[Unit]
+Description=Xilinx APF Driver Service.
+After=udev.target
+After=dbus.target
+After=avahi.target
+After=syslog.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/sbin/modprobe xlnk-eng
+ExecStart=/sbin/modprobe xlnk-dma
+ExecStart=/sbin/modprobe xlnk-apf
+ExecStop=/sbin/rmmod xlnk-apf
+ExecStop=/sbin/rmmod xlnk-dma
+ExecStop=/sbin/rmmod xlnk-eng
+
+[Install]
+WantedBy=multi-user.target
+

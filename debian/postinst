@@ -2,3 +2,6 @@
 
 depmod
 
+systemctl enable  xilinx-apf-driver.service
+systemctl start   xilinx-apf-driver.service
+

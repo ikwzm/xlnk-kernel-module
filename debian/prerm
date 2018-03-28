@@ -1,2 +1,4 @@
 #!/bin/sh -e
 
+systemctl stop    xilinx-apf-driver.service
+systemctl disable xilinx-apf-driver.service
