@@ -1,4 +1,4 @@
-prefix         ?= ./
+prefix         ?= 
 curr_dir       ?= $(shell pwd)
 lib_dir        ?= $(prefix)/lib/modules/4.14.21-armv7-fpga/xilinx
 
