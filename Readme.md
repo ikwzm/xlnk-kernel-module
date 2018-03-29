@@ -64,11 +64,20 @@ shell$ make
 
 https://github.com/ikwzm/FPGA-SoC-Linux
 
-### Build Debian Package
+### Build Debian Package 
+
+#### Self Compile
 
 ```console
 shell$ cd $(XLNK_KERNEL_MODULE_PATH)/build
-shell$ sudo debian/rules binary
+shell$ sudo debian/rules binary 
+```
+
+#### Cross Compile
+
+```console
+shell$ cd $(XLNK_KERNEL_MODULE_PATH)/build
+shell$ sudo debian/rules KERNEL_SRC_DIR=<kernel-source-direcotory> binary 
 ```
 
 ### Install Debian Package
