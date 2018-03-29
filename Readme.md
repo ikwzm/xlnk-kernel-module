@@ -1,15 +1,26 @@
 xlnk kernel module
 ==================
 
+Overview
+------------------------------------------------------------------------------------
+
+### Introduction
+
 "xlnk" is Xilinx APF Accelerator driver.
 
 This repository provides an environment for building "xlnk" as a kernel module.
 
+### Requirement
 
-Build and Install in self environment of FPGA-SoC-Linux(4.14.21-armv7-fpga)
----------------------------------------------------------------------------
+* FPGA-SoC-Linux (Release 0.7)
+  + https://github.com/ikwzm/FPGA-SoC-Linux
+  + ZYBO, ZYBO-Z7, PYNQ-Z1
+  + linux kernel v4.14.21
+  + Debian9(stretch) Root File System
 
-https://github.com/ikwzm/FPGA-SoC-Linux
+
+Build and Install in self environment of FPGA-SoC-Linux
+------------------------------------------------------------------------------------
 
 ### Download repository
 
@@ -86,10 +97,11 @@ shell$ sudo rmmod xlnk-eng
 shell$ sudo rm /lib/modules/4.14.21-armv7-fpga/xilinx/xlnk-apf
 shell$ sudo rm /lib/modules/4.14.21-armv7-fpga/xilinx/xlnk-dma
 shell$ sudo rm /lib/modules/4.14.21-armv7-fpga/xilinx/xlnk-eng
+shell$ sudo depmod
 ```
 
 Debian Package for FPGA-SoC-Linux
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 https://github.com/ikwzm/FPGA-SoC-Linux
 
