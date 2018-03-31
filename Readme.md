@@ -129,7 +129,7 @@ shell$ sudo debian/rules binary
 #### Build in cross environment
 
 ```console
-shell$ sudo debian/rules KERNEL_SRC_DIR=<kernel-source-direcotory> binary 
+shell$ sudo debian/rules kernel_src_dir=<kernel-source-direcotory> binary 
 ```
 
 ### Install Debian Package
